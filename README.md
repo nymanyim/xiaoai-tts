@@ -14,10 +14,6 @@
 
 已验证设备：`onemore.wifispeaker.sm4`
 
-## 限制
-
-当前使用小爱音箱默认的 MiNA TTS 音色，不支持指定音色、说话人、语速或音调。播报依赖小米云服务，不支持离线使用。
-
 ## 安装
 
 1. 打开 HACS，进入“集成”。
@@ -44,18 +40,7 @@ data:
   message: "测试小爱音箱文字播报"
 ```
 
-实体 ID 以 Home Assistant 实际创建的 Notify Entity 为准。
-
-## 升级说明
-
-`0.2.0` 起内部标识调整为：
-
-```text
-Domain：xiaoai_tts_bridge
-组件目录：custom_components/xiaoai_tts_bridge
-```
-
-从 `0.1.x` 升级后，请删除旧集成并重新添加 **XiaoAI TTS Bridge**。
+实体 ID 由 Home Assistant 自动生成，请以实际创建的 Notify Entity 为准。
 
 ## 致谢
 
