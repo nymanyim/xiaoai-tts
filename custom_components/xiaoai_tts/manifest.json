@@ -1,0 +1,13 @@
+{
+  "domain": "xiaoai_tts",
+  "name": "XiaoAI TTS",
+  "codeowners": ["@nymanyim"],
+  "config_flow": true,
+  "documentation": "https://github.com/nymanyim/xiaoai-tts",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/nymanyim/xiaoai-tts/issues",
+  "loggers": ["miservice"],
+  "requirements": ["miservice==3.0.1"],
+  "version": "0.1.0"
+}
