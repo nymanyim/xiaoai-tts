@@ -10,7 +10,7 @@ from miservice import MiAccount, MiNAService
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
-from homeassistant.helpers.aiohttp_client import async_create_clientsession
+from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .token_store import ConfigEntryTokenStore
 
@@ -37,7 +37,7 @@ class XiaoAiTtsClient:
         reauth_callback: Callable[[], Awaitable[None]],
     ) -> None:
         self._reauth_callback = reauth_callback
-        self._session = async_create_clientsession(hass)
+        self._session = async_get_clientsession(hass)
         self._token_store = ConfigEntryTokenStore(hass, entry)
         self._account = MiAccount(
             self._session,
