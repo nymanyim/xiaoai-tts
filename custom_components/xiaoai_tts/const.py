@@ -1,0 +1,14 @@
+"""Constants for the XiaoAI TTS integration."""
+
+from homeassistant.const import Platform
+
+DOMAIN = "xiaoai_tts"
+PLATFORMS = [Platform.NOTIFY]
+
+CONF_DEVICES = "devices"
+CONF_HARDWARE = "hardware"
+CONF_MIOT_DID = "miot_did"
+CONF_TOKEN = "token"
+
+DEFAULT_NAME = "XiaoAI TTS"
+AUTH_TIMEOUT = 300
