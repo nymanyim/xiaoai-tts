@@ -1,0 +1,57 @@
+{
+  "title": "小爱 TTS 中间服务",
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接小米账号",
+        "description": "请输入拥有目标小爱音箱的小米账号凭据。",
+        "data": {
+          "username": "小米账号",
+          "password": "密码"
+        }
+      },
+      "otp": {
+        "title": "需要安全验证",
+        "description": "请输入通过 {method} 收到的验证码。",
+        "data": {
+          "otp": "验证码"
+        }
+      },
+      "devices": {
+        "title": "选择音箱",
+        "description": "请选择一个或多个需要创建为通知实体的小爱音箱。",
+        "data": {
+          "selected_devices": "音箱"
+        }
+      },
+      "reauth_confirm": {
+        "title": "重新连接小米账号",
+        "description": "账号认证已失效，请重新输入小米账号凭据。",
+        "data": {
+          "username": "小米账号",
+          "password": "密码"
+        }
+      },
+      "reconfigure": {
+        "title": "选择音箱",
+        "description": "更新此集成需要使用的小爱音箱。",
+        "data": {
+          "selected_devices": "音箱"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到小米 MiNA 服务。",
+      "invalid_auth": "小米账号认证失败。",
+      "login_expired": "登录会话已过期，请重试。",
+      "no_device_selected": "请至少选择一个音箱。"
+    },
+    "abort": {
+      "already_configured": "该小米账号已经配置。",
+      "invalid_auth": "小米账号认证失败。",
+      "login_expired": "登录会话已过期，请重试。",
+      "no_devices": "未发现兼容的 MiNA 音箱。",
+      "wrong_account": "输入的小米账号与需要重新认证的账号不一致。"
+    }
+  }
+}
