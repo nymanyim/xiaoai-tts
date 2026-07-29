@@ -145,7 +145,7 @@ class XiaoAiTtsConfigFlow(ConfigFlow, domain=DOMAIN):
                 CONF_TOKEN: token,
                 CONF_DEVICES: devices,
             }
-            title = f"XiaoAI TTS ({self._username})"
+            title = f"XiaoAI TTS Bridge ({self._username})"
 
             if self.source == "reauth":
                 entry = self._get_reauth_entry()
