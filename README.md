@@ -63,4 +63,4 @@ Domain：xiaoai_tts_bridge
 
 ## 许可证
 
-[MIT](LICENSE)
+<a href="LICENSE">MIT</a>
