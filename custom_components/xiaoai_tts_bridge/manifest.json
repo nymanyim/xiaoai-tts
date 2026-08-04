@@ -9,5 +9,5 @@
   "issue_tracker": "https://github.com/nymanyim/xiaoai-tts-bridge/issues",
   "loggers": ["miservice"],
   "requirements": ["miservice==3.0.1"],
-  "version": "0.2.0"
+  "version": "0.2.1"
 }
